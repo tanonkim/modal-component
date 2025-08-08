@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import localFont from 'next/font/local';
 
-const chaney = localFont({
-    src: '../../public/fonts/chaney.woff2',
-    variable: '--font-chaney',
+const pretendard = localFont({
+    src: '../../public/fonts/PretendardVariable.woff2',
+    variable: '--font-pretendard',
 });
 
 export const metadata: Metadata = {
@@ -18,8 +18,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html className={`h-screen min-h-screen leading-none ${chaney.variable}`} lang="ko">
-            <body className=" h-full w-full font-chaney">{children}</body>
+        <html className={`h-screen min-h-screen leading-none ${pretendard.variable}`} lang="ko">
+            <body className=" h-full w-full font-pretendard">{children}</body>
         </html>
     );
 }
