@@ -1,3 +1,5 @@
-export default function Home() {
-    return <div>Hello World</div>;
+import { Home } from '@/views';
+
+export default function Page() {
+    return <Home />;
 }
