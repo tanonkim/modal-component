@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-export function useToggle(initial: boolean = false) {
+function useToggle(initial: boolean = false) {
     const [state, setState] = useState(initial);
     const open = useCallback(() => setState(true), []);
     const close = useCallback(() => setState(false), []);
